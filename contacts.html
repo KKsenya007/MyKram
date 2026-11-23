@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Довідка та контакти — Краматорськ</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="nav-container">
+            <a href="index.html" class="logo">
+                <span class="logo-badge"></span>
+                <span>Краматорськ</span>
+            </a>
+            <button class="mobile-toggle" aria-label="Меню">☰</button>
+            <ul class="nav-links">
+                <li><a href="index.html" class="">Головна</a></li>
+                <li><a href="history.html" class="">Історія</a></li>
+                <li><a href="landmarks.html" class="">Визначні місця</a></li>
+                <li><a href="industry.html" class="">Промисловість та освіта</a></li>
+                <li><a href="contacts.html" class="active">Довідка та контакти</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <main>
+        <div class="page-header">
+            <h1>Довідка та зворотний зв'язок</h1>
+            <p>Корисна інформація для мешканців, гостей міста та форма звернення.</p>
+        </div>
+
+        <div class="grid-2">
+            <div class="card">
+                <h3>Основні довідкові дані</h3>
+                <ul style="list-style: none; margin-top: 1rem; display: flex; flex-direction: column; gap: 0.75rem; color: var(--text-muted);">
+                    <li><strong>Область:</strong> Донецька область (адміністративний центр)</li>
+                    <li><strong>Поштові індекси:</strong> 84300 — 84399</li>
+                    <li><strong>Телефонний код:</strong> +380 (626) / +380 (6264)</li>
+                    <li><strong>Координати:</strong> 48°44′21″ пн. ш. 37°35′03″ сх. д.</li>
+                    <li><strong>День міста:</strong> Остання неділя вересня</li>
+                    <li><strong>Офіційний портал міськради:</strong> <a href="https://krm.gov.ua" target="_blank" rel="noopener">krm.gov.ua</a></li>
+                </ul>
+            </div>
+
+            <div class="card">
+                <h3>Написати повідомлення</h3>
+                <form id="kramatorsk-form" style="margin-top: 1rem;">
+                    <div class="form-group">
+                        <label for="name">Ваше ім'я</label>
+                        <input type="text" id="name" placeholder="Олександр" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="topic">Тема звернення</label>
+                        <select id="topic">
+                            <option>Туристична інформація</option>
+                            <option>Історична довідка</option>
+                            <option>Пропозиція щодо сайту</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Повідомлення</label>
+                        <textarea id="message" rows="4" placeholder="Ваше запитання або відгук про місто..." required></textarea>
+                    </div>
+                    <button type="submit" class="btn">Надіслати</button>
+                    <div id="form-success" class="alert-success">
+                        Дякуємо! Ваше повідомлення успішно збережено (демо-режим статичного сайту).
+                    </div>
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-container">
+            <div>
+                <strong>Краматорськ — індустріальне серце Донеччини</strong>
+                <p style="font-size: 0.88rem; color: #94a3b8; margin-top: 0.25rem;">Інформаційний портал про місто, його спадщину та людей.</p>
+            </div>
+            <div class="footer-links">
+                <a href="index.html">Головна</a>
+                <a href="history.html">Історія</a>
+                <a href="landmarks.html">Визначні місця</a>
+                <a href="industry.html">Промисловість та освіта</a>
+                <a href="contacts.html">Довідка та контакти</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

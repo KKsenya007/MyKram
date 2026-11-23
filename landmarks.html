@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Визначні місця — Краматорськ</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="nav-container">
+            <a href="index.html" class="logo">
+                <span class="logo-badge"></span>
+                <span>Краматорськ</span>
+            </a>
+            <button class="mobile-toggle" aria-label="Меню">☰</button>
+            <ul class="nav-links">
+                <li><a href="index.html" class="">Головна</a></li>
+                <li><a href="history.html" class="">Історія</a></li>
+                <li><a href="landmarks.html" class="active">Визначні місця</a></li>
+                <li><a href="industry.html" class="">Промисловість та освіта</a></li>
+                <li><a href="contacts.html" class="">Довідка та контакти</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <main>
+        <div class="page-header">
+            <h1>Визначні місця та локації</h1>
+            <p>Архітектурні пам'ятки, природні заповідники та улюблені місця відпочинку мешканців і гостей міста.</p>
+        </div>
+
+        <div style="margin-bottom: 1.5rem; display: flex; gap: 0.5rem; flex-wrap: wrap;">
+            <button class="btn" data-filter="all">Усі локації</button>
+            <button class="btn" style="background:#e2e8f0;" data-filter="nature">Природа</button>
+            <button class="btn" style="background:#e2e8f0;" data-filter="parks">Парки та місто</button>
+            <button class="btn" style="background:#e2e8f0;" data-filter="culture">Культура</button>
+        </div>
+
+        <div class="grid-2">
+            <article class="card" data-category="nature">
+                <span class="card-tag">Природа</span>
+                <h3>Крейдяні гори (РЛП «Краматорський»)</h3>
+                <p>Білосніжні крейдяні схили поблизу селища Біленьке — геологічна пам'ятка віком десятки мільйонів років. З вершин відкривається панорама на все місто та долину Казенного Торця.</p>
+            </article>
+
+            <article class="card" data-category="parks">
+                <span class="card-tag">Парки та місто</span>
+                <h3>Сад Бернацького</h3>
+                <p>Оновлений центральний парк культури та відпочинку, закладений ще на початку XX століття. Сучасний ландшафтний дизайн, бігові доріжки, містки та зелені газони.</p>
+            </article>
+
+            <article class="card" data-category="culture">
+                <span class="card-tag">Культура</span>
+                <h3>Палац культури і техніки НКМЗ</h3>
+                <p>Монументальна будівля на площі Миру, що є архітектурною домінантою центру міста та головним концертним і театральним майданчиком Краматорська.</p>
+            </article>
+
+            <article class="card" data-category="nature">
+                <span class="card-tag">Природа</span>
+                <h3>Комишуваха та лісові урочища</h3>
+                <p>Мальовнича ділянка регіонального ландшафтного парку з віковими дубами, сосновими насадженнями, озерами та екологічними стежками.</p>
+            </article>
+
+            <article class="card" data-category="culture">
+                <span class="card-tag">Культура</span>
+                <h3>Краматорський художній музей та Музей історії міста</h3>
+                <p>Зібрання творів українських митців, археологічні знахідки краю та унікальні експонати, що висвітлюють промисловий розвиток регіону.</p>
+            </article>
+
+            <article class="card" data-category="parks">
+                <span class="card-tag">Парки та місто</span>
+                <h3>Площа Миру та центральні бульвари</h3>
+                <p>Серце громадського життя міста з фонтанами, пішохідними алеями, скульптурними композиціями та затишними кав'ярнями.</p>
+            </article>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-container">
+            <div>
+                <strong>Краматорськ — індустріальне серце Донеччини</strong>
+                <p style="font-size: 0.88rem; color: #94a3b8; margin-top: 0.25rem;">Інформаційний портал про місто, його спадщину та людей.</p>
+            </div>
+            <div class="footer-links">
+                <a href="index.html">Головна</a>
+                <a href="history.html">Історія</a>
+                <a href="landmarks.html">Визначні місця</a>
+                <a href="industry.html">Промисловість та освіта</a>
+                <a href="contacts.html">Довідка та контакти</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
